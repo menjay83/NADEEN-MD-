@@ -53,7 +53,7 @@ async function checkAndPostNews(conn, groupId) {
 
         if (!lastNewsTitles[groupId].includes(newsItem.title)) {
            await conn.sendMessage(groupId, { 
-                text: `*🔵𝐍𝐄𝐖𝐒 𝐀𝐋𝐄𝐑𝐓!*\n██████████████████████████████████████████\n\n\n📰 *${newsItem.title}*\n${newsItem.content}\n\n${newsItem.date}\n\n> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴᴀᴅᴇᴇɴ ᴘᴏᴏʀɴᴀ*\n> *𝗡𝗔𝗗𝗘𝗘𝗡 - 𝗠𝗗*` 
+                text: `📰 *${newsItem.title}*\n\n✍🏻 ${newsItem.content}\n\n📆 ${newsItem.date}\n\n\n> 👨🏻‍💻 ᴍᴀᴅᴇ ʙʏ *ᴄʜᴇᴛʜᴍɪɴᴀ ᴋᴀᴠɪꜱʜᴀɴ*` 
             });
             lastNewsTitles[groupId].push(newsItem.title);
 
