@@ -82,7 +82,7 @@ cmd({
                 if (!activeGroups[from]) {
                     activeGroups[from] = true;
 
-                    await conn.sendMessage(from, { text: "🇱🇰 Auto 24/7 News Activated.\n\n> ©𝗡𝗔𝗗𝗘𝗘𝗡 𝗠𝗗" });
+                    await conn.sendMessage(from, { text: "🇱🇰 Auto 24/7 News Activated." });
 
                     if (!activeGroups['interval']) {
                         activeGroups['interval'] = setInterval(async () => {
@@ -95,7 +95,7 @@ cmd({
                     }
 
                 } else {
-                    await conn.sendMessage(from, { text: "*✅ 24/7 News Already Activated.*\n\n> ©𝗡𝗔𝗗𝗘𝗘𝗡 𝗠𝗗" });
+                    await conn.sendMessage(from, { text: "*✅ 24/7 News Already Activated.*" });
                 }
             } else {
                 await conn.sendMessage(from, { text: "🚫 This command can only be used by group admins or the bot owner." });
@@ -132,7 +132,7 @@ cmd({
                         delete activeGroups['interval'];
                     }
                 } else {
-                    await conn.sendMessage(from, { text: "🛑 24/7 News is not active in this group.\n\n> ©𝗡𝗔𝗗𝗘𝗘𝗡 𝗠𝗗" });
+                    await conn.sendMessage(from, { text: "🛑 24/7 News is not active in this group." });
                 }
             } else {
                 await conn.sendMessage(from, { text: "🚫 This command can only be used by group admins or the bot owner." });
